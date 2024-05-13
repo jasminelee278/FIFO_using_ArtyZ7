@@ -32,7 +32,7 @@ Dựa trên ý tưởng đã trình bày ở trên, nhóm đã từ đó nghiên
 ***Source code:*** BTL_tb.v
 
 ### 4.	Demo on board
-***Source code:*** BTL_board.v
+***Source code:*** BTL_board.v, longer_clk.v
 
 Code BTL_board.v dùng để hiện thực trên board thay đổi so với code BTL.v:
   - Thay đổi kích thước dữ liệu data_in vào FIFO từ 8 bit thành 1 bit để hiện thực trên board dễ quan sát data_out (1 bit: bit 0 – đèn tắt, bit 1 – đèn sáng).
