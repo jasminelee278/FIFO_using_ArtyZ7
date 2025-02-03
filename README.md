@@ -8,7 +8,7 @@
 ![FIFO](https://github.com/user-attachments/assets/2b5557d6-4a1b-44fc-bc99-6a29c3017110)
   - **Implement (Hiện thực):** FIFO có thể hiện thực bằng thanh ghi dịch – phần cứng (hardware shift register) hoặc dùng các cấu trúc bộ nhớ khác, điển hình là FIFO vòng (circular buffer, ring buffer, array-base bufer), hoặc danh sách (list). Ở đây chúng ta sẽ nghiên cứu về mô hình FIFO được hiện thực thông qua cấu trúc Ring buffer.
     - ***Ring Buffer (Circular Buffer):*** Buffer vòng không có điểm cuối thực tế và nó sẽ lặp lại (loop) vòng quanh trong buffer.
-![Ring](https://github.com/user-attachments/assets/21853192-7231-4ce4-b13c-e7a492cbb3ab)
+    ![Ring](https://github.com/user-attachments/assets/21853192-7231-4ce4-b13c-e7a492cbb3ab)
 
     - ***Hiện thực FIFO bằng buffer vòng:*** Bộ đệm này được thực hiện dựa trên một mảng. Kèm theo đó là 2 con trỏ Write và Read.
       - Khi bắt đầu, con trỏ pWrite và pEnd đều cùng trỏ vào vị trí đầu tiên (index 0).
@@ -16,7 +16,7 @@
       - Khi 1 con trỏ tới được cuối mảng, nó sẽ cuộn lại vị trí đầu tiên.
       - Nếu (pRead == pWrite), chứng tỏ bộ đệm đang trống (empty), không có gì để đọc.
       - Nếu (pWrite + 1 == pRead), chứng tỏ bộ đệm đang đầy (full), không thể ghi thêm.
-![Implement](https://github.com/user-attachments/assets/6632e1a4-f76d-443a-9063-f1b9165ba4c1)
+  ![Implement](https://github.com/user-attachments/assets/6632e1a4-f76d-443a-9063-f1b9165ba4c1)
 
   - **Applications (Ứng dụng):** FIFO thường được sử dụng trong các mạch điện tử để đệm (buffering) và điều khiển luồng (flow) giữa phần cứng và phần mềm; cũng thường được ứng dụng trong lĩnh vực quản lý hàng hóa;...
 
